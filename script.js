@@ -4,7 +4,7 @@ const shortBtn = document.getElementById('shorttenButton');
 const error = document.getElementById('error');
 const container = document.querySelector('.links-container')
 
-let links = [...JSON.parse(localStorage.getItem('links'))];
+let links = []//[...JSON.parse(localStorage.getItem('links'))];
 
 
 shortBtn.addEventListener('click', checkURL);
