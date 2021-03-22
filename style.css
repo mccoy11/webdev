@@ -479,6 +479,127 @@ button:active{
     pointer-events: none;
 }
 
+
+@media (max-width: 800px) {
+
+    body{
+        margin: 0;
+    }
+
+    header {
+        display: none;
+        margin-top: 0;
+    }
+    
+    .main-content{
+        width: 100vw;
+    }
+
+    
+    .front{
+        width: 90%;
+        flex-direction: column;
+        overflow-x: hidden;
+        margin-top: 25px;
+    }
+
+    #slogan{
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+    
+    .front-right, .front-left{
+        width: 100%;
+    }
+
+    .front-right{
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+
+    .front-right img{
+        margin-top: 25px;
+        height: 150px;
+    }
+
+    .url-holder{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .url-holder button{
+        width: 90%;
+        margin: 0;
+    }
+
+    .url-holder input{
+        width: 90%;
+        margin: 0;
+    }
+
+    .link-info span {
+        display: block;
+    }
+
+    .link-info{
+        font-size: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .link{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .link button{
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    .advanced{
+        width: 90%;
+    }
+
+    .info-blocks{
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+
+    hr{
+        display: none;
+    }
+
+    footer{
+        flex-direction: column;
+        height: auto;
+        padding: 25px 25px;
+
+    }
+
+    footer #bottomLogo{
+        width: 80px;
+    }
+
+    footer div {
+        margin-top: 25px;
+    }
+
+    .block{
+        width: 90%;
+        margin-top: 20px;
+    }
+}
+
+  
 /* 
 
 
