@@ -58,7 +58,6 @@ function populateLinks(links){
 
         div.addEventListener('click', (e) => {
             if(e.target.classList.contains('delete')){
-                console.log('works');
                 deleteLink(e);
             } else if(e.target.tagName == 'BUTTON'){
                 let parent = e.target.parentElement;
