@@ -403,8 +403,8 @@ input.dark::placeholder{
     .img-wrapper{
         width: 100%;
         margin-bottom: 30px;
-        height: 200px;
-        max-height: 200px;        
+        height: fit-content;
+        max-height: none;
     }
 
     .img-wrapper img{
