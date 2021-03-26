@@ -8,9 +8,7 @@ const filterHolder = document.querySelector('.filter-holder');
 const filter = document.querySelector('.filter');
 const regions = document.querySelector('.regions');
 const mode = document.getElementById('mode');
-
-
-
+const regionLinks = document.querySelectorAll('.regions a');
 
 let countries = [];
 let filtered = [];
@@ -233,11 +231,24 @@ function getBorders(country){
     return borders.innerHTML;
 }
 
+function populateRegion(e){
+    
+    let selectedReg = countries.filter( country => country.region == e.target.innerHTML)
+
+    console.log(selectedReg);
+
+    main.innerHTML = '';
+
+    selectedReg.forEach( country => displayCountry(country));
+}
+
+
 
 input.addEventListener('keyup', (e) => {
     searchTerm = input.value;
-    populateSearch(e)
+    populateSearch(e);
 });
+
 mode.addEventListener('click', () => {
 
     
@@ -251,6 +262,7 @@ mode.addEventListener('click', () => {
   
 });
 
+regionLinks.forEach( link => link.addEventListener('click', populateRegion));
 
 
 setMode();
