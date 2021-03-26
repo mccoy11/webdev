@@ -383,7 +383,9 @@ input.dark::placeholder{
     }
 
     .search .regions{
+        border: none;
         width: 90%;
+        top: 90%
     }
 
     .main{
@@ -397,7 +399,7 @@ input.dark::placeholder{
     .country{
         width: 90%;
         height: fit-content;
-        min-height: 350px;
+        min-height: 370px;
     }
 
     .img-wrapper{
